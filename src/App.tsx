@@ -23,7 +23,7 @@ function App() {
   function submitToServer(audioFile: any) {
     const formData = new FormData();
     formData.append("audio_file", audioFile);
-    fetch("http://127.0.0.1:5000/transcribe", {
+    fetch("https://transcripthorrr.onrender.com/transcribe", {
       method: "POST",
       body: formData,
     })
@@ -51,7 +51,7 @@ function App() {
   function submitToProServer(audioFile: any) {
     const formData = new FormData();
     formData.append("audio_file", audioFile);
-    fetch("http://127.0.0.1:5000/transcribe_pro", {
+    fetch("https://transcripthorrr.onrender.com/transcribe_pro", {
       method: "POST",
       body: formData,
     })
